@@ -87,13 +87,13 @@
 <meta property="og:site_name" content="西瓜甜不甜的奋斗路">
 <meta property="og:description" content="一直说要开始写博客，但是每次都是配置好环境，放在一边就开始做别的事情了，导致今天配置HEXO的时候还是一头雾水，前两天看到有一位大佬说，写技术博客可能短期内不会有太大收益，但是坚持做下去会发现很有用处，于是下定决心决定开始慢慢写起来，这篇博客的主要内容有：  HEXO环境搭建 如何修改HEXO主题以及设置博客分类，标签等信息 MD文件编辑器，MD语法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="d:/HEXO/source/_posts/hexo建站环境搭建与基本配置/next主题目录.jpg">
-<meta property="og:image" content="d:/HEXO/source/_posts/hexo建站环境搭建与基本配置/index.jpg">
-<meta property="og:updated_time" content="2018-07-30T12:12:16.252Z">
+<meta property="og:image" content="http://usctim.com/2018/07/30/hexo建站环境搭建与基本配置/next主题目录.jpg">
+<meta property="og:image" content="http://usctim.com/2018/07/30/hexo建站环境搭建与基本配置/index.jpg">
+<meta property="og:updated_time" content="2018-07-30T12:21:20.003Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo建站环境搭建与基本配置">
 <meta name="twitter:description" content="一直说要开始写博客，但是每次都是配置好环境，放在一边就开始做别的事情了，导致今天配置HEXO的时候还是一头雾水，前两天看到有一位大佬说，写技术博客可能短期内不会有太大收益，但是坚持做下去会发现很有用处，于是下定决心决定开始慢慢写起来，这篇博客的主要内容有：  HEXO环境搭建 如何修改HEXO主题以及设置博客分类，标签等信息 MD文件编辑器，MD语法">
-<meta name="twitter:image" content="d:/HEXO/source/_posts/hexo建站环境搭建与基本配置/next主题目录.jpg">
+<meta name="twitter:image" content="http://usctim.com/2018/07/30/hexo建站环境搭建与基本配置/next主题目录.jpg">
 
 
 
@@ -368,7 +368,7 @@
 <p>官方文档链接：<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener"></a></p>
 <h3 id="修改HEXO主题以及设置博客分类，标签等信息"><a href="#修改HEXO主题以及设置博客分类，标签等信息" class="headerlink" title="修改HEXO主题以及设置博客分类，标签等信息"></a>修改HEXO主题以及设置博客分类，标签等信息</h3><p>Hexo提供了很多开源的主题，可以找一些<a href="https://hexo.io/themes/" target="_blank" rel="noopener">自己喜爱的主题</a>，或者如果你想，也可以按照自身的需求个性化定制，不过我觉得花时间在上面有点太亏了，所以就直接用的现有的主题NexT。</p>
 <h4 id="下载NexT主题"><a href="#下载NexT主题" class="headerlink" title="下载NexT主题"></a>下载NexT主题</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> &lt;博客存放的目录&gt;</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<p><img src="D:\HEXO\source\_posts\hexo建站环境搭建与基本配置\next主题目录.jpg" alt="文件目录如下图显示"></p>
+<p><img src="next主题目录.jpg" alt="文件目录如下图显示"></p>
 <h4 id="配置NexT主题"><a href="#配置NexT主题" class="headerlink" title="配置NexT主题"></a>配置NexT主题</h4><p>主要有以下几个步骤：</p>
 <ol>
 <li><p>打开HEXO根目录下的_config.yml</p>
@@ -383,7 +383,7 @@
 </ol>
 <ol start="3">
 <li><p>设置文档分类，标签等信息</p>
-<p><img src="D:\HEXO\source\_posts\hexo建站环境搭建与基本配置\index.jpg" alt=""></p>
+<p><img src="index.jpg" alt=""></p>
 <p>我们在写文章的时候希望能有分类和标签的功能，以便我们进行查找。例如，我们可以在<strong>前端</strong>的<strong>分类</strong>中浏览有关前端内容的博客，也可以在<strong>js</strong>的<strong>标签</strong>中浏览有关JavaScript的内容，这时就需要我们对该功能进行配置，配置文件的位置位于<strong>主题文件夹根目录下</strong>，文件名为_config.yml，具体的流程为：</p>
 <p><strong>Step 1: </strong>设置导航栏中显示的菜单项和显示的图标</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">  home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line"><span class="attr">  tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">  archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line"><span class="attr">  about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br><span class="line"></span><br><span class="line"><span class="attr">menu_icons:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  home:</span> <span class="string">home</span></span><br><span class="line"><span class="attr">  about:</span> <span class="string">user</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">th</span></span><br><span class="line"><span class="attr">  tags:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">  archives:</span> <span class="string">archive</span></span><br></pre></td></tr></table></figure>
